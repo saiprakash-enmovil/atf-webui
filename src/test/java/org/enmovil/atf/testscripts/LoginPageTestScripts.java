@@ -28,7 +28,7 @@ public class LoginPageTestScripts extends BaseListener {
 		loginService.loginToAMNSApplication(logindata.getUserName(), logindata.getPassWord());
 	}
 	
-	@Test(description="Open Side Menu list in AMNS Application",priority=0)
+	@Test(description="Open Side Menu list in AMNS Application and navigate",priority=0)
 	public void sideMenuList() {
 		homePageService.navigateToActiveTrips();
 	}
