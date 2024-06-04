@@ -5,10 +5,11 @@
     <classes>
       <class name="org.enmovil.atf.testscripts.LoginPageTestScripts">
         <methods>
+          <include name="tearDown"/>
           <include name="getResult"/>
-          <include name="loginPage"/>
           <include name="endReport"/>
           <include name="startReport"/>
+          <include name="sideMenuList"/>
           <include name="init"/>
         </methods>
       </class> <!-- org.enmovil.atf.testscripts.LoginPageTestScripts -->

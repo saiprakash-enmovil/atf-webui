@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.enmovil.atf.config.BrowserDriver;
 import org.enmovil.atf.pageobjects.LoginPageContainer;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 
 public class LoginPageService {
 	
@@ -17,7 +18,8 @@ public class LoginPageService {
 			loginPageContainer.getUserPassword().sendKeys(password);
 			BrowserDriver.wait(2);
 			loginPageContainer.getLoginButton().click();
-			log.info("User logged in successfully.");
+			log.info("User logged in successfully and URL printed");
+			
 		}
 		catch(Exception ex) {
 			ex.printStackTrace();
